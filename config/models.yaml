@@ -1,0 +1,26 @@
+default_params:
+  temperature: 0.2
+  max_tokens: 256
+
+models:
+  # Gemini (one model)
+  - provider: gemini
+    model_id: gemini-flash-latest
+    name: gemini-flash-latest
+    rate_limit_per_min: 60
+
+  # OpenRouter (free models)
+  - provider: openrouter-llama
+    model_id: meta-llama/llama-3.3-70b-instruct:free
+    name: openrouter-llama-3.3-70b-instruct-free
+    rate_limit_per_min: 15
+
+  - provider: openrouter-deepseek
+    model_id: deepseek/deepseek-chat-v3.1:free
+    name: openrouter-deepseek-chat
+    rate_limit_per_min: 15
+
+  - provider: openrouter-kimi
+    model_id: moonshotai/kimi-k2:free
+    name: openrouter-kimi-2
+    rate_limit_per_min: 15

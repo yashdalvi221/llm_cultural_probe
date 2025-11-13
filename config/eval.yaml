@@ -1,0 +1,11 @@
+tasks:
+  - name: values_norms
+    dataset: data/processed/values_norms.jsonl
+    type: discriminative
+
+seeds: [7, 13, 21]
+paraphrases_per_prompt: 3
+results_dir: results/runs
+figures_dir: results/figures
+
+
