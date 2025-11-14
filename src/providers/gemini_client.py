@@ -106,7 +106,7 @@ class GeminiClient(ModelClient):
         select = self.generate(
             GenerationRequest(
                 prompt=prompt,
-                temperature=min(0.1, req.temperature),
+                temperature=req.temperature,
                 max_tokens=100,
                 system_prompt=req.system_prompt,
                 stop=req.stop,

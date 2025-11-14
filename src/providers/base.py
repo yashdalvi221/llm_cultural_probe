@@ -6,7 +6,7 @@ from typing import Dict, List, Optional
 class GenerationRequest:
     prompt: str
     choices: Optional[List[str]] = None  # MCQ if provided
-    temperature: float = 0.2
+    temperature: float = 1.0
     max_tokens: int = 256
     seed: Optional[int] = 7
     system_prompt: Optional[str] = None
